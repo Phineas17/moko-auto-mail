@@ -1,15 +1,8 @@
 {
-  "version": 2,
-  "functions": {
-    "api/send-emails.js": {
-      "runtime": "nodejs18.x",
-      "schedule": "*/10 * * * *"
-    }
-  },
-  "routes": [
+  "crons": [
     {
-      "src": "/api/send-emails",
-      "dest": "api/send-emails.js"
+      "path": "/api/send-emails",
+      "schedule": "*/10 * * * *"
     }
   ]
 }
