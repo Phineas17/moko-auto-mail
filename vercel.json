@@ -1,0 +1,5 @@
+{
+  "version": 2,
+  "builds": [{ "src": "api/send-emails.js", "use": "@vercel/node" }],
+  "routes": [{ "src": "/api/send-emails", "dest": "api/send-emails.js" }]
+}
